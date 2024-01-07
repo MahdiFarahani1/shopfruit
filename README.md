@@ -22,4 +22,6 @@
 
 افزودن ویژگی های سفارشی سازی
 
-![plot](./Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۰-۵۸-۴۳۰_com.example.shop_project.jpg)
+![plot](./Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۰-۵۸-۴۳۰_com.example.shop_project.jpg?width=50&height=50)
+
+
