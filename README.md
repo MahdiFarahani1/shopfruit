@@ -1,16 +1,30 @@
-# shop_project
+این پروژه یک اپلیکیشن فروشگاه میوه است که از بلاک، API و سایر ویژگی های Flutter استفاده می کند. این پروژه هنوز کامل نیست، اما دارای ویژگی های زیر است:
 
-A new Flutter project.
+چک کردن اتصال کاربر
+<br>
+بارگیری محصولات از API
+<br>
+مدیریت خطاها
+<br>
+داری صفحه intro
+<br>
+استفاده از انیمیشن ها زیاد
+<br>
+منیجمنت api با بلاک
+و...
+<br>
+<br>
+این پروژه هنوز کامل نیست، اما دارای پتانسیل زیادی برای تبدیل شدن به یک اپلیکیشن فروشگاه میوه کامل است. ویژگی های احتمالی آینده برای این پروژه عبارتند از:
 
-## Getting Started
+افزودن ویژگی های خرید و پرداخت
 
-This project is a starting point for a Flutter application.
+افزودن ویژگی های مدیریت محصول
 
-A few resources to get you started if this is your first Flutter project:
+افزودن ویژگی های سفارشی سازی
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<pre>
+  <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۰-۵۸-۴۳۰_com.example.shop_project.jpg" width="150" height="300">         <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۱۶-۸۴۶_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۳۸-۷۷۱_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۵۱-۶۰۷_com.example.shop_project.jpg" width="150" height="300">
+</pre>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
