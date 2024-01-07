@@ -22,6 +22,9 @@
 
 افزودن ویژگی های سفارشی سازی
 
-![plot](./Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۰-۵۸-۴۳۰_com.example.shop_project.jpg?width=50&height=50)
+<pre>
+  <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۰-۵۸-۴۳۰_com.example.shop_project.jpg" width="150" height="300">         <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۱۶-۸۴۶_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۳۸-۷۷۱_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۵۱-۶۰۷_com.example.shop_project.jpg" width="150" height="300">
+</pre>
+
 
 
