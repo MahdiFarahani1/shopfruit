@@ -1,3 +1,4 @@
+import 'package:eshakmohsen/features/feature_auth/peresntion/screens/initialLogin.dart';
 import 'package:eshakmohsen/features/feature_home/presentation/screens/home_screen.dart';
 import 'package:eshakmohsen/features/feature_product/presentation/widgets/category.dart';
 import 'package:flutter/cupertino.dart';
@@ -33,15 +34,7 @@ class _BottomNavState extends State<BottomNav> {
     List<Widget> mainScreens = [
       HomeScreen(),
       const MainCategory(),
-      Container(
-        color: Colors.black87,
-        child: const Center(
-          child: Text(
-            "به زودی...",
-            style: TextStyle(color: Colors.white, fontSize: 22),
-          ),
-        ),
-      ),
+      const InitLogan(),
       Container(
         color: Colors.black87,
         child: const Center(
