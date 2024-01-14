@@ -1,5 +1,6 @@
 import 'package:eshakmohsen/common/widgets/main_wrapper.dart';
 import 'package:eshakmohsen/config/my_theme.dart';
+import 'package:eshakmohsen/features/feature_auth/peresntion/bloc/icon_visibility/cubit/icon_cubit.dart';
 import 'package:eshakmohsen/features/feature_home/presentation/blocs/cubit/api_home/home_cubit.dart';
 import 'package:eshakmohsen/features/feature_intro/presentation/bloc/intro_cubit/intro_cubit.dart';
 import 'package:eshakmohsen/features/feature_intro/presentation/bloc/splash_cubit/splash_cubit.dart';
@@ -27,6 +28,9 @@ void main() async {
     BlocProvider(
       create: (context) => HomeCubit(locator()),
     ),
+    BlocProvider(
+      create: (context) => IconCubit(),
+    )
   ], child: const MyApp()));
 }
 
