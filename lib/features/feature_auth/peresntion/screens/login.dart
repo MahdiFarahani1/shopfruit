@@ -1,5 +1,6 @@
 import 'package:eshakmohsen/config/constants.dart';
 import 'package:eshakmohsen/features/feature_auth/params/btn_login.dart';
+import 'package:eshakmohsen/features/feature_auth/params/input.dart';
 import 'package:eshakmohsen/features/feature_auth/peresntion/bloc/icon_visibility/cubit/icon_cubit.dart';
 import 'package:eshakmohsen/features/feature_auth/widgets/coustom_widgets.dart';
 import 'package:flutter/material.dart';
@@ -22,10 +23,19 @@ class Loginpage extends StatelessWidget {
             return Column(
               children: [
                 CustomWidgets.textAuth("همین حالا وارد شوید"),
-                CustomWidgets.input(context, "تلفن همراه", TextInputType.number,
-                    false, null, false),
-                CustomWidgets.input(context, "رمز عبور", TextInputType.text,
-                    true, state.visitIcon, state.visitBool),
+                CustomWidgets.input(InputModel(
+                    context: context,
+                    text: "تلفن همراه",
+                    type: TextInputType.number,
+                    showIcon: false,
+                    obs: false)),
+                CustomWidgets.input(InputModel(
+                    context: context,
+                    text: "رمز عبور",
+                    type: TextInputType.text,
+                    showIcon: true,
+                    obs: state.visitBool,
+                    myicon: state.visitIcon)),
                 Padding(
                   padding: const EdgeInsets.only(top: 30),
                   child: CustomWidgets.btnAuth(

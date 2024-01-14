@@ -1,4 +1,5 @@
 import 'package:eshakmohsen/features/feature_auth/params/btn_login.dart';
+import 'package:eshakmohsen/features/feature_auth/params/input.dart';
 import 'package:eshakmohsen/features/feature_auth/peresntion/bloc/icon_visibility/cubit/icon_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -36,21 +37,21 @@ class CustomWidgets {
     );
   }
 
-  static Widget input(BuildContext context, String text, TextInputType type,
-      bool pass, IconData? iconData, bool obs) {
+  static Widget input(InputModel inputModel) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 16),
       child: TextFormField(
-        keyboardType: type,
+        keyboardType: inputModel.type,
         maxLength: 20,
-        obscureText: obs,
+        obscureText: inputModel.obs,
         decoration: InputDecoration(
-            suffixIcon: pass
+            suffixIcon: inputModel.showIcon
                 ? IconButton(
                     onPressed: () {
-                      BlocProvider.of<IconCubit>(context).eventIcon(iconData!);
+                      BlocProvider.of<IconCubit>(inputModel.context)
+                          .eventIcon(inputModel.myicon!);
                     },
-                    icon: Icon(iconData))
+                    icon: Icon(inputModel.myicon))
                 : null,
             border: const OutlineInputBorder(
                 borderSide: BorderSide(
@@ -59,7 +60,7 @@ class CustomWidgets {
                     strokeAlign: 10,
                     style: BorderStyle.solid),
                 borderRadius: BorderRadius.all(Radius.circular(12))),
-            labelText: text,
+            labelText: inputModel.text,
             labelStyle: const TextStyle(
               fontSize: 13,
               color: Colors.grey,
