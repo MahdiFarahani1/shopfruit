@@ -7,6 +7,7 @@ class InputModel {
   final bool showIcon;
   final IconData? myicon;
   final bool obs;
+  final ValidEnum typeForValid;
 
   InputModel(
       {required this.context,
@@ -14,5 +15,8 @@ class InputModel {
       required this.type,
       required this.showIcon,
       this.myicon,
-      required this.obs});
+      required this.obs,
+      required this.typeForValid});
 }
+
+enum ValidEnum { name, number, pass }

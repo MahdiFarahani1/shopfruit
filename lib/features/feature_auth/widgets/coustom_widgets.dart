@@ -1,6 +1,7 @@
 import 'package:eshakmohsen/features/feature_auth/params/btn_login.dart';
 import 'package:eshakmohsen/features/feature_auth/params/input.dart';
 import 'package:eshakmohsen/features/feature_auth/peresntion/bloc/icon_visibility/cubit/icon_cubit.dart';
+import 'package:eshakmohsen/features/feature_auth/repositories/validation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -41,6 +42,22 @@ class CustomWidgets {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 16),
       child: TextFormField(
+        validator: (value) {
+          if (value!.isEmpty) {
+            return "لطفا فرم را پر کنید";
+          } else {
+            switch (inputModel.typeForValid) {
+              case ValidEnum.name:
+                return FormValid.checkOnlyPersianLetters(value);
+              case ValidEnum.number:
+                return FormValid.checkOnlyNumbers(value);
+              case ValidEnum.pass:
+                return FormValid.checkPasswordStrength(value);
+              default:
+            }
+          }
+          return null;
+        },
         keyboardType: inputModel.type,
         maxLength: 20,
         obscureText: inputModel.obs,
