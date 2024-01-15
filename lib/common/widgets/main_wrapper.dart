@@ -1,4 +1,4 @@
-import 'package:eshakmohsen/common/widgets/bottom_nav.dart';
+import 'package:shop/common/widgets/bottom_nav.dart';
 
 import 'package:flutter/material.dart';
 

@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:eshakmohsen/common/utils/Perfs_oparator.dart';
-import 'package:eshakmohsen/features/feature_home/data/data_source/apiProvide.dart';
-import 'package:eshakmohsen/features/feature_home/repositories/home_repositories.dart';
+import 'package:shop/common/utils/Perfs_oparator.dart';
+import 'package:shop/features/feature_home/data/data_source/apiProvide.dart';
+import 'package:shop/features/feature_home/repositories/home_repositories.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

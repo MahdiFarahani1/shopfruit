@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:eshakmohsen/features/feature_intro/repositorys/intro_reposetory.dart';
+import 'package:shop/features/feature_intro/repositorys/intro_reposetory.dart';
 import 'package:meta/meta.dart';
 
 part 'splash_state.dart';

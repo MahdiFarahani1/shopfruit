@@ -1,10 +1,10 @@
 import 'package:delayed_display/delayed_display.dart';
-import 'package:eshakmohsen/common/utils/CoustomLoading.dart';
-import 'package:eshakmohsen/common/utils/Perfs_oparator.dart';
-import 'package:eshakmohsen/common/widgets/main_wrapper.dart';
-import 'package:eshakmohsen/features/feature_intro/presentation/bloc/splash_cubit/splash_cubit.dart';
-import 'package:eshakmohsen/features/feature_intro/presentation/screens/intro_screenMain.dart';
-import 'package:eshakmohsen/locator.dart';
+import 'package:shop/common/utils/CoustomLoading.dart';
+import 'package:shop/common/utils/Perfs_oparator.dart';
+import 'package:shop/common/widgets/main_wrapper.dart';
+import 'package:shop/features/feature_intro/presentation/bloc/splash_cubit/splash_cubit.dart';
+import 'package:shop/features/feature_intro/presentation/screens/intro_screenMain.dart';
+import 'package:shop/locator.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

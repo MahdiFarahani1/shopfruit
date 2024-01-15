@@ -1,4 +1,4 @@
-import 'package:eshakmohsen/features/feature_home/data/models/model.dart';
+import 'package:shop/features/feature_home/data/models/model.dart';
 
 abstract class HomeStatus {}
 

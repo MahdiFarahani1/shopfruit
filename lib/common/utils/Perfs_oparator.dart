@@ -1,4 +1,4 @@
-import 'package:eshakmohsen/locator.dart';
+import 'package:shop/locator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefsOprator {

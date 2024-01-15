@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eshakmohsen/common/utils/CoustomLoading.dart';
-import 'package:eshakmohsen/common/utils/random.dart';
-import 'package:eshakmohsen/features/feature_home/presentation/blocs/cubit/api_home/home_cubit.dart';
-import 'package:eshakmohsen/features/feature_home/presentation/blocs/cubit/api_home/home_status.dart';
+import 'package:shop/common/utils/CoustomLoading.dart';
+import 'package:shop/common/utils/random.dart';
+import 'package:shop/features/feature_home/presentation/blocs/cubit/api_home/home_cubit.dart';
+import 'package:shop/features/feature_home/presentation/blocs/cubit/api_home/home_status.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

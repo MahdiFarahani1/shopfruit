@@ -1,9 +1,9 @@
-import 'package:eshakmohsen/common/utils/Perfs_oparator.dart';
-import 'package:eshakmohsen/common/widgets/main_wrapper.dart';
-import 'package:eshakmohsen/features/feature_intro/presentation/bloc/intro_cubit/intro_cubit.dart';
-import 'package:eshakmohsen/features/feature_intro/presentation/widgets/btn_start.dart';
-import 'package:eshakmohsen/features/feature_intro/presentation/widgets/value.dart';
-import 'package:eshakmohsen/locator.dart';
+import 'package:shop/common/utils/Perfs_oparator.dart';
+import 'package:shop/common/widgets/main_wrapper.dart';
+import 'package:shop/features/feature_intro/presentation/bloc/intro_cubit/intro_cubit.dart';
+import 'package:shop/features/feature_intro/presentation/widgets/btn_start.dart';
+import 'package:shop/features/feature_intro/presentation/widgets/value.dart';
+import 'package:shop/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

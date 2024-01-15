@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:eshakmohsen/config/constants.dart';
+import 'package:shop/config/constants.dart';
 
 class ApiHomeProvider {
   Dio dio;

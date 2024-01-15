@@ -1,5 +1,5 @@
-import 'package:eshakmohsen/features/feature_product/presentation/screen/products_screen.dart';
-import 'package:eshakmohsen/features/feature_product/presentation/widgets/list_cat.dart';
+import 'package:shop/features/feature_product/presentation/screen/products_screen.dart';
+import 'package:shop/features/feature_product/presentation/widgets/list_cat.dart';
 import 'package:flutter/material.dart';
 
 class MainCategory extends StatelessWidget {

@@ -1,6 +1,6 @@
-import 'package:eshakmohsen/features/feature_auth/peresntion/screens/initialLogin.dart';
-import 'package:eshakmohsen/features/feature_home/presentation/screens/home_screen.dart';
-import 'package:eshakmohsen/features/feature_product/presentation/widgets/category.dart';
+import 'package:shop/features/feature_auth/peresntion/screens/initialLogin.dart';
+import 'package:shop/features/feature_home/presentation/screens/home_screen.dart';
+import 'package:shop/features/feature_product/presentation/widgets/category.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';

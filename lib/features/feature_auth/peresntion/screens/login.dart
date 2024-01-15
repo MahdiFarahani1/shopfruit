@@ -1,9 +1,9 @@
-import 'package:eshakmohsen/common/utils/CoustomSnackbar.dart';
-import 'package:eshakmohsen/config/constants.dart';
-import 'package:eshakmohsen/features/feature_auth/params/btn_login.dart';
-import 'package:eshakmohsen/features/feature_auth/params/input.dart';
-import 'package:eshakmohsen/features/feature_auth/peresntion/bloc/icon_visibility/cubit/icon_cubit.dart';
-import 'package:eshakmohsen/features/feature_auth/widgets/coustom_widgets.dart';
+import 'package:shop/common/utils/CoustomSnackbar.dart';
+import 'package:shop/config/constants.dart';
+import 'package:shop/features/feature_auth/params/btn_login.dart';
+import 'package:shop/features/feature_auth/params/input.dart';
+import 'package:shop/features/feature_auth/peresntion/bloc/icon_visibility/cubit/icon_cubit.dart';
+import 'package:shop/features/feature_auth/widgets/coustom_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

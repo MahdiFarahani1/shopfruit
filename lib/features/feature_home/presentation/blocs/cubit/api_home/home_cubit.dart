@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:eshakmohsen/features/feature_home/presentation/blocs/cubit/api_home/home_status.dart';
-import 'package:eshakmohsen/features/feature_home/repositories/data_state.dart';
-import 'package:eshakmohsen/features/feature_home/repositories/home_repositories.dart';
+import 'package:shop/features/feature_home/presentation/blocs/cubit/api_home/home_status.dart';
+import 'package:shop/features/feature_home/repositories/data_state.dart';
+import 'package:shop/features/feature_home/repositories/home_repositories.dart';
 
 part 'home_state.dart';
 
