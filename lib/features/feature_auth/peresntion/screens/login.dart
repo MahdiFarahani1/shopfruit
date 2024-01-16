@@ -12,6 +12,9 @@ class Loginpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var txUsername = TextEditingController();
+    var txPass = TextEditingController();
+
     return Scaffold(
       backgroundColor: Constants.bgPinkColor,
       appBar: AppBar(
@@ -32,7 +35,8 @@ class Loginpage extends StatelessWidget {
                       type: TextInputType.number,
                       showIcon: false,
                       obs: false,
-                      typeForValid: ValidEnum.number)),
+                      typeForValid: ValidEnum.number,
+                      textEditingController: txUsername)),
                   CustomWidgets.input(InputModel(
                       context: context,
                       text: "رمز عبور",
@@ -40,7 +44,8 @@ class Loginpage extends StatelessWidget {
                       showIcon: true,
                       obs: state.visitBool,
                       myicon: state.visitIcon,
-                      typeForValid: ValidEnum.pass)),
+                      typeForValid: ValidEnum.pass,
+                      textEditingController: txPass)),
                   Padding(
                     padding: const EdgeInsets.only(top: 30),
                     child: CustomWidgets.btnAuth(

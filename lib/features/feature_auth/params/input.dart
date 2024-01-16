@@ -8,6 +8,7 @@ class InputModel {
   final IconData? myicon;
   final bool obs;
   final ValidEnum typeForValid;
+  final TextEditingController textEditingController;
 
   InputModel(
       {required this.context,
@@ -16,7 +17,8 @@ class InputModel {
       required this.showIcon,
       this.myicon,
       required this.obs,
-      required this.typeForValid});
+      required this.typeForValid,
+      required this.textEditingController});
 }
 
 enum ValidEnum { name, number, pass }
