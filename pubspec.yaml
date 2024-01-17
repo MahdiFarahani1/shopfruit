@@ -53,6 +53,8 @@ dependencies:
   flutter_typeahead: ^5.0.1
   cached_network_image: ^3.3.1
   get: ^4.6.6
+  floor: ^1.4.2
+  sqflite: ^2.3.0
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +66,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  floor_generator: ^1.4.2
+  build_runner: ^2.4.8
+  
+  
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

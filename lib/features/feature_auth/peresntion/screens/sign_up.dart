@@ -1,16 +1,15 @@
-import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 import 'package:shop/common/utils/CoustomSnackbar.dart';
+
 import 'package:shop/config/constants.dart';
-import 'package:shop/features/feature_auth/data/api_auth_provider.dart';
+import 'package:shop/features/feature_auth/data/model/user_info.dart';
 import 'package:shop/features/feature_auth/params/btn_login.dart';
 import 'package:shop/features/feature_auth/params/input.dart';
 import 'package:shop/features/feature_auth/peresntion/bloc/icon_visibility/cubit/icon_cubit.dart';
-import 'package:shop/features/feature_auth/repositories/api_auth_signup.dart';
+import 'package:shop/features/feature_auth/repositories/repository_database.dart';
 import 'package:shop/features/feature_auth/widgets/coustom_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shop/locator.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -19,7 +18,7 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController txName = TextEditingController();
     TextEditingController txFamily = TextEditingController();
-    TextEditingController txUsername = TextEditingController();
+    TextEditingController txPhone = TextEditingController();
     TextEditingController txPass = TextEditingController();
 
     return Scaffold(
@@ -56,11 +55,11 @@ class SignUp extends StatelessWidget {
                   CustomWidgets.input(InputModel(
                       context: context,
                       text: "تلفن همراه",
-                      type: TextInputType.text,
+                      type: TextInputType.number,
                       showIcon: false,
                       obs: false,
-                      typeForValid: ValidEnum.pass,
-                      textEditingController: txUsername)),
+                      typeForValid: ValidEnum.number,
+                      textEditingController: txPhone)),
                   CustomWidgets.input(InputModel(
                       context: context,
                       text: "رمز عبور",
@@ -76,15 +75,43 @@ class SignUp extends StatelessWidget {
                         context: context,
                         ontap: () async {
                           if (Constants.formkey.currentState!.validate()) {
-                            var api = await SignUpRepositoreis(
-                                    apiAuthProvider:
-                                        ApiAuthProvider(dio: Dio()))
-                                .sendData(
+                            DataBaseRepository dataBaseRepository =
+                                DataBaseRepository();
+                            await dataBaseRepository.initUserDao();
+
+                            try {
+                              print(
+                                  'Checking for user with phone: $txPhone.text');
+
+                              if (await dataBaseRepository
+                                  .userExistsWithPhone(txPhone.text)) {
+                                CoustomSnackBar.getxsnack(
+                                    "ارور",
+                                    "این حساب قبلا ساخته شده",
+                                    SnackPosition.TOP,
+                                    Colors.red);
+                              } else {
+                                dataBaseRepository.addUser(UserInfo(
+                                    id: 8,
                                     name: txName.text,
                                     family: txFamily.text,
-                                    username: txUsername.text,
-                                    pass: txPass.text);
-                            print(api);
+                                    phone: txPhone.text,
+                                    password: txPass.text));
+
+                                CoustomSnackBar.getxsnack(
+                                    "ثبت نام",
+                                    "با موفقیت انجام شد",
+                                    SnackPosition.TOP,
+                                    Colors.green);
+                              }
+                            } catch (e) {
+                              print('Error during sign up: $e');
+                              CoustomSnackBar.getxsnack(
+                                  "ارور",
+                                  "شماره تلفن وارد شده معتبر نیست",
+                                  SnackPosition.TOP,
+                                  Colors.red);
+                            }
                           }
                         },
                         text: "ثبت نام",
