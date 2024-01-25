@@ -23,7 +23,7 @@
 افزودن ویژگی های سفارشی سازی
 
 <pre>
-  <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۰-۵۸-۴۳۰_com.example.shop_project.jpg" width="150" height="300">         <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۱۶-۸۴۶_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۳۸-۷۷۱_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۵۱-۶۰۷_com.example.shop_project.jpg" width="150" height="300">           <image src="Screenshot_1704601768.png" width="150" height="300">            <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۵۱-۶۰۷_com.example.shop_project.jpg" width="150" height="300">          
+  <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۰-۵۸-۴۳۰_com.example.shop_project.jpg" width="150" height="300">         <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۱۶-۸۴۶_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۳۸-۷۷۱_com.example.shop_project.jpg" width="150" height="300">          <image src="Screenshot_۲۰۲۴-۰۱-۰۷-۰۴-۳۱-۵۱-۶۰۷_com.example.shop_project.jpg" width="150" height="300">           <image src="Screenshot_1704601768.png" width="150" height="300">            <image src="Screenshot_1704601757.png" width="150" height="300">          
 </pre>
 
 
